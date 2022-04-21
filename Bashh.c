@@ -16,15 +16,20 @@ Fecha: 21-04-22
 #include <sys/types.h>
 #include <sys/stat.h>
 
+//Declaracion de funciones que contendran las llamadas al sistema.
 void crearDirectorio();
 void reaad();
+void createNewFork();
 
 int main(){
+    //String que contendrá el comando que ingrese el usuario.
     char comando[20];
-    
+    //Ciclo do-while que finaliza cuando el usuario ingrese el comando $salir.
     do{
+        //Lectura de entrada del usuario
         printf(">");
         scanf("%s",&comando);
+        //Limpiamos el buffer.
         fflush(stdin);
 
         if(strcmp(comando, "Salir") == 0){
@@ -44,7 +49,7 @@ int main(){
         }
         
     }while(strcmp(comando,"Salir"));
-
+    //fin de la ejecucion de la bash.
     return 0;
 }
 
