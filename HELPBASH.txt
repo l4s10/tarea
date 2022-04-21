@@ -1,0 +1,8 @@
+Manual uso de mishelle v1.2 (Linux version)
+
+Comandos disponibles:
+- $limpiarPantalla : Limpia la terminal de la bash.
+- $Salir : salir de la bash y terminar la ejecucion del programa.
+- $listDir : Listar los directorios actuales
+- $crearDirectorio : Comando para crear un directorio o archivo
+- $leerDirectorio : 
