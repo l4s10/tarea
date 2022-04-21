@@ -35,8 +35,10 @@ int main(){
             system("ls -l");
         }else if(strcmp(comando, "crearDirectorio") == 0){
             crearDirectorio();
-        }else if(strcmp(comando, "leerDirectorio") == 0){
+        }else if(strcmp(comando, "leerArchivo") == 0){
             reaad();
+        }else if(strcmp(comando, "crearFork") == 0){
+            createNewFork();
         }else{
             printf("Comando no reconocido por la bash.\n");
         }
@@ -86,6 +88,7 @@ void reaad(){
     if(!directorioCheck){
         printf("ERROR AL ABRIR ARCHIVO\n");
     }else{
+        //llamada al sistema read()
         numBytes = read(directorioCheck,buffer,20);
         close(directorioCheck);
         if(numBytes == 0){
