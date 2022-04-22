@@ -15,4 +15,7 @@ Comandos disponibles:
 
 - $leerArchivo : Comando que se utiliza para leer los bytes que contiene un archivo y como funcion adicional mostrar parte del texto del archivo. (hace referencia a la llamada de sistema "read()")
 
-- $crearFork : Comando que se utiliza para crear un nuevo fork, si este se crea correctamente muestra tanto al proceso padre como el hijo con sus respectivos pids.
+- $crearFork : Comando que se utiliza para crear un nuevo fork, si este se crea correctamente muestra tanto al proceso padre como el hijo con sus respectivos pid.
+(Para verificar el funcionamiento del comando escriba en la bash o abra otra terminal y escriba el comando "$verificarFork")
+
+- $verificarFork : La función de este comando es mostrar todos los procesos activos en el sistema. Esto se usa para verificar si el Fork fue creado de manera correcta, si todo se hizo correctamente y se digita este comando, nuestra bash tendrá y mostrara 2 procesos identificados con el mismo pid que se mostró al crear el fork con $crearFork.

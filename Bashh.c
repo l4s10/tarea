@@ -44,6 +44,8 @@ int main(){
             reaad();
         }else if(strcmp(comando, "crearFork") == 0){
             createNewFork();
+        }else if(strcmp(comando, "verificarFork") == 0){
+            system("ps -fe");
         }else{
             printf("Comando no reconocido por la bash.\n");
         }
