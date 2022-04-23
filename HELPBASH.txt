@@ -3,6 +3,10 @@ Manual uso de mishelle v1.2 (Linux version)
 Nota importante:
 - Para evitar conflictos en las funciones con argumentos
 al momento de ingresar el comando se pedirá el argumento, si el argumento es erroneo la bash lo detectará y saltará un mensaje de error.
+- Llamadas al sistema que se ejecutan en esta bash:
+    -> mkdir()
+    -> read()
+    -> fork()
 
 Comandos disponibles:
 - $limpiarPantalla : Limpia la terminal de la bash.
