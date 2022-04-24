@@ -115,12 +115,12 @@ void createNewFork(){
             printf("Proceso hijo %d padre %d\n",getpid(), getppid());
             while(1);
         break;
-        case 1 :
-            printf("Proceso padre %d padre del proceso: %d \n",getpid(),getppid());
-        break;
-        default:
+        case -1:
             printf("ERROR(1) \n");
             exit(1);
+        break;
+        default:
+            printf("Proceso padre %d padre del proceso: %d \n",getpid(),getppid());
         break;
     }
 }
