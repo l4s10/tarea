@@ -82,6 +82,7 @@ void reaad(){
     //Variable para ver si el directorio a seleccionar existe o no
     int directorioCheck;
     char buffer[50];
+    //Variable que contendra el tamaño del archivo para mostrarlo por consola.
     ssize_t numBytes;
     //string que contendra el nombre o ruta del archivo a leer
     char rutaArchivo[100];
@@ -89,6 +90,7 @@ void reaad(){
     printf("Ingrese la ruta o el nombre del archivo\n");
     scanf("%s",&rutaArchivo);
 
+    //Llamada al sistema open()
     directorioCheck = open(rutaArchivo, O_RDONLY);
 
     //Verificacion si el archivo esta creado, vacio o un error al abrirlo
@@ -110,6 +112,7 @@ void createNewFork(){
     int pid;
     pid = fork();
 
+    //dependiendo del valor que retorne fork() se ejecutaran las siguientes instrucciones
     switch(pid){
         case 0 :
             printf("Proceso hijo %d padre %d\n",getpid(), getppid());
