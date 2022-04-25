@@ -38,6 +38,8 @@ int main(){
             system("clear");
         }else if(strcmp(comando, "listDir") == 0){
             system("ls -l");
+        }else if(strcmp(comando, "miUbicacion") == 0){
+            system("pwd");
         }else if(strcmp(comando, "crearDirectorio") == 0){
             crearDirectorio();
         }else if(strcmp(comando, "leerArchivo") == 0){
