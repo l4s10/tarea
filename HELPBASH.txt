@@ -15,7 +15,7 @@ Comandos disponibles:
 
 - $listDir : Listar los directorios actuales
 
-- $miUbicacion : muestra el directorio en donde el usuario se encuentra.
+- $miUbicacion : muestra el directorio en donde el usuario se encuentra, (tiene la misma funcion que el comando pwd).
 
 - $crearDirectorio : Comando para crear un directorio (hace referencia a la llamada al sistema "mkdir()")
 
