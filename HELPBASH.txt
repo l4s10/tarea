@@ -15,6 +15,8 @@ Comandos disponibles:
 
 - $listDir : Listar los directorios actuales
 
+- $miUbicacion : muestra el directorio en donde el usuario se encuentra.
+
 - $crearDirectorio : Comando para crear un directorio (hace referencia a la llamada al sistema "mkdir()")
 
 - $leerArchivo : Comando que se utiliza para leer los bytes que contiene un archivo y como funcion adicional mostrar parte del texto del archivo. (hace referencia a la llamada de sistema "read()")
